@@ -1,0 +1,62 @@
+<div class="row">
+  <form name="myForm" novalidate ng-submit="addNewUser(newUser)" ng-class="showValidation ? 'validate' : ''">
+    <div class="form-group">
+      <label for="InputName">Enter Name</label>
+
+      <div class="input-group">
+        <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required
+               ng-model="newUser.name">
+        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+      </div>
+      <div class="error" ng-show="showValidation">
+        {{getError(myForm.InputName.$error)}}
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="InputEmail">Enter Email</label>
+
+      <div class="input-group">
+        <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required
+               ng-model="newUser.email">
+        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+      </div>
+      <div class="error" ng-show="showValidation">
+        {{getError(myForm.InputEmail.$error)}}
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="InputCountry">Enter country</label>
+
+      <div class="input-group">
+        <input type="text" class="form-control" id="InputCountry" name="InputCountry" placeholder="Enter country"
+               required ng-model="newUser.country">
+        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+      </div>
+      <div class="error" ng-show="showValidation">
+        {{getError(myForm.InputCountry.$error)}}
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="InputCompany">Enter company</label>
+
+      <div class="input-group">
+        <input type="text" class="form-control" id="InputCompany" name="InputCompany" placeholder="Enter company"
+               required ng-model="newUser.company">
+        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+      </div>
+      <div class="error" ng-show="showValidation">
+        {{getError(myForm.InputCompany.$error)}}
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="DescriptionCompany">Description company</label>
+
+      <div class="input-group">
+        <textarea name="DescriptionCompany" id="DescriptionCompany" class="form-control" rows="5"
+                  ng-model="newUser.description"></textarea>
+        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Сохранить</button>
+  </form>
+</div>

@@ -1,0 +1,102 @@
+/*!
+ * Start Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.error {
+    margin-top: 5px;
+}
+
+/* Pricing Page Styles */
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+}
+
+.period {
+    display: block;
+    font-style: italic;
+}
+
+form .ng-invalid-required.ng-dirty {
+    background-color: lightpink;
+}
+
+form .ng-invalid-email.ng-dirty {
+    background-color: lightgoldenrodyellow;
+}
+
+form .ng-valid.ng-dirty {
+    background-color: lightgreen;
+}
+
+span.summary.ng-invalid {
+    color: red;
+    font-weight: bold;
+}
+
+span.summary.ng-valid {
+    color: green;
+}
+
+div.error {
+    color: red;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+
+footer {
+    margin: 50px 0;
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+}

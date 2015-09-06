@@ -1,0 +1,78 @@
+<div class="row">
+  <div class="col-lg-12">
+    <h1 class="page-header">
+      Предложения
+    </h1>
+  </div>
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4><i class="fa fa-fw fa-check"></i> {{ nameProposal1 }}</h4>
+      </div>
+      <div class="panel-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in
+          alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum
+          quod?</p>
+        <div class="row">
+          <div class="col-md-8"><button class="btn btn-default" ng-click="selectProposal(nameProposal1)">Выбрать</button></div>
+          <div class="col-md-4">{{ price1 }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4><i class="fa fa-fw fa-gift"></i> {{ nameProposal2 }}</h4>
+      </div>
+      <div class="panel-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in
+          alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum
+          quod?</p>
+        <div class="row">
+          <div class="col-md-8"><button class="btn btn-default" ng-click="selectProposal(nameProposal2)">Выбрать</button></div>
+          <div class="col-md-4">{{ price2 }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4><i class="fa fa-fw fa-compass"></i> {{ nameProposal3 }}</h4>
+      </div>
+      <div class="panel-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in
+          alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum
+          quod?</p>
+        <div class="row">
+          <div class="col-md-8"><button class="btn btn-default" ng-click="selectProposal(nameProposal3)">Выбрать</button></div>
+          <div class="col-md-4">{{ price3 }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="col-md-12">
+      <div class="alert alert-danger" ng-show="alertWarning">
+        <span class="glyphicon glyphicon-remove"></span><strong> Error! Выберете заявку!</strong>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <div class="form-group">
+      <label for="selectCurrency" class="col-sm-2 control-label">Валюта</label>
+      <div class="col-sm-10">
+        <select class="form-control" id="selectCurrency" ng-model="currency" ng-selected="currency"
+                ng-options="currency for currency in currencyes" ng-change="changeCurrency()">
+          {{currency}}
+        </select>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <button class="btn btn-lg btn-success pull-right" ng-click="submitData()">Отправить заявку</button>
+  </div>
+</div>
