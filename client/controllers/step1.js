@@ -18,7 +18,7 @@ angular.module('MyApp')
         userDetails.company = newUser.company;
         userDetails.description = newUser.description || '';
         localStorage.setItem('userDetails', JSON.stringify(userDetails));
-        $location.path('/step2');
+        window.location = '#/step2';
       } else {
         $scope.showValidation = true;
       }
